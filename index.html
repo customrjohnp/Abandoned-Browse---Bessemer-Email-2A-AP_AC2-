@@ -6,7 +6,6 @@
     <meta name="x-apple-disable-message-reformatting">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      /* Mobile helpers (kept tiny + safe for most clients) */
       @media only screen and (max-width: 620px){
         .wrapper{width:100% !important}
         .full{width:100% !important;height:auto !important}
@@ -14,7 +13,6 @@
         .stack{display:block !important;width:100% !important}
         .hide-m{display:none !important}
       }
-      /* Button hover (safe fallback in most clients) */
       a.btn:hover{opacity:.9}
     </style>
   </head>
@@ -25,7 +23,7 @@
           <td align="center" style="padding:20px 10px;">
             <!-- Container -->
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="620" class="wrapper" style="width:620px;background:#ffffff;">
-              
+
               <!-- View Online -->
               <tr>
                 <td align="center" style="padding:12px 10px 8px;">
@@ -33,11 +31,39 @@
                 </td>
               </tr>
 
-              <!-- Header USP -->
+              <!-- HEADER (logo + nav like Image 1) -->
+              <tr>
+                <td align="center" style="padding:0 10px 6px;">
+                  <a href="#" target="_blank" style="text-decoration:none;">
+                    <img src="https://link.bessemer.com.au/custloads/1024002066/vce/Bessemer_Header.jpg"
+                         width="300" alt="BESSEMER" style="display:block;border:0;outline:none;width:300px;height:auto;">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" style="padding:0 10px 14px;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td align="center" style="font:14px/1.2 Lato,Arial,Helvetica,sans-serif;color:#000;">
+                        <a href="#" target="_blank" style="color:#000;text-decoration:none;">COOKWARE</a>
+                      </td>
+                      <td style="padding:0 18px;font:bold 14px/1.2 Lato,Arial,Helvetica,sans-serif;color:#000;" class="hide-m">|</td>
+                      <td align="center" style="font:14px/1.2 Lato,Arial,Helvetica,sans-serif;color:#000;">
+                        <a href="#" target="_blank" style="color:#000;text-decoration:none;">RECIPES</a>
+                      </td>
+                      <td style="padding:0 18px;font:bold 14px/1.2 Lato,Arial,Helvetica,sans-serif;color:#000;" class="hide-m">|</td>
+                      <td align="center" style="font:14px/1.2 Lato,Arial,Helvetica,sans-serif;color:#000;">
+                        <a href="#" target="_blank" style="color:#000;text-decoration:none;">SALE</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- USP strip -->
               <tr>
                 <td align="center">
-                  <a href="#"
-                     target="_blank" style="text-decoration:none;">
+                  <a href="#" target="_blank" style="text-decoration:none;">
                     <img src="https://link.bessemer.com.au/custloads/1024002066/md_445234.jpg"
                          width="600" alt="Free Shipping Sitewide"
                          class="full"
@@ -62,7 +88,7 @@
                   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr>
                       <td align="center" style="font:16px/1.4 Lato, Arial, Helvetica, sans-serif; color:#000;">
-                        Hi {{contact.firstname}},
+                        Hi Soha,
                         <br><br>
                         <strong style="font-size:20px; line-height:1.3; font-weight:bold;">
                           Your amazing Bessemer Cookware is still waiting for you. But it won't be here forever—hurry, don't miss out!
@@ -76,39 +102,38 @@
               <!-- Spacer -->
               <tr><td style="height:20px;line-height:20px;font-size:0;">&nbsp;</td></tr>
 
-              <!-- Abandoned Cart Tile (uses recommender image + CTA) -->
+              <!-- Abandoned Cart Tile (Image 3 layout: image left + copy + red CTA right) -->
               <tr>
                 <td class="pad-hrz" style="padding:0 40px;">
                   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr>
                       <!-- Product image (dynamic) -->
-                      <td class="stack" valign="middle" width="160" style="width:160px;">
+                      <td class="stack" valign="middle" width="200" style="width:200px;">
                         <a href="#" target="_blank" style="text-decoration:none;">
                           <img src="https://recommender.scarabresearch.com/merchants/17ADCDA308096B9B/6qdixz/1.jpg?eh={{contact.12565}}&es={{contact.12566}}"
-                               width="160" alt="Your Saved Item"
+                               width="200" alt="Your Saved Item"
                                class="full"
-                               style="display:block;width:160px;height:auto;border:0;">
+                               style="display:block;width:200px;height:auto;border:0;">
                         </a>
                       </td>
 
                       <!-- Gap -->
-                      <td class="hide-m" width="12" style="width:12px;">&nbsp;</td>
+                      <td class="hide-m" width="20" style="width:20px;">&nbsp;</td>
 
                       <!-- Title/price + CTA -->
                       <td class="stack" valign="middle" style="text-align:center;">
-                        <div style="font:20px/1.2 Lato, Arial, Helvetica, sans-serif; color:#000; font-weight:bold;">
+                        <div style="font:18px/1.3 Lato, Arial, Helvetica, sans-serif; color:#000; font-weight:bold;">
                           Your Cart is Waiting
                         </div>
-                        <div style="font:12px/1.2 Lato, Arial, Helvetica, sans-serif; color:#000; margin-top:6px;">
+                        <div style="font:12px/1.4 Lato, Arial, Helvetica, sans-serif; color:#000; margin:6px 0 12px;">
                           Complete your checkout in minutes.
                         </div>
 
-                        <!-- CTA -->
-                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin-top:12px;">
+                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center">
                           <tr>
                             <td bgcolor="#d60e00" style="border-radius:2px;">
                               <a href="#" target="_blank" class="btn"
-                                 style="display:block;padding:11px 22px;font:16px/1.2 Lato, Arial, Helvetica, sans-serif;color:#fff;text-decoration:none;font-weight:bold;">
+                                 style="display:block;padding:11px 22px;font:bold 16px/1.2 Lato, Arial, Helvetica, sans-serif;color:#ffffff;text-decoration:none;">
                                 SHOP NOW
                               </a>
                             </td>
@@ -121,15 +146,15 @@
               </tr>
 
               <!-- Spacer -->
-              <tr><td style="height:25px;line-height:25px;font-size:0;">&nbsp;</td></tr>
+              <tr><td style="height:28px;line-height:28px;font-size:0;">&nbsp;</td></tr>
 
-              <!-- Section Title: Recommended for you -->
+              <!-- Section Title -->
               <tr>
                 <td class="pad-hrz" style="padding:0 40px;">
                   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr>
                       <td align="center" style="font:bold 18px/1.2 Lato, Arial, Helvetica, sans-serif;color:#000;">
-                        RECOMMENDED JUST&nbsp;FOR YOU
+                        RECOMMENDED JUST&nbsp; FOR YOU
                       </td>
                     </tr>
                     <tr><td style="height:12px;line-height:12px;font-size:0;">&nbsp;</td></tr>
@@ -138,22 +163,50 @@
                 </td>
               </tr>
 
-              <!-- Recommender (single large) -->
+              <!-- 3-COLUMN RECOMMENDER (Image 5 style) -->
               <tr>
-                <td align="center" style="padding:16px 0 0;">
-                  <a href="#" target="_blank" style="text-decoration:none;">
-                    <img src="https://recommender.scarabresearch.com/merchants/17ADCDA308096B9B/6qdixz/1.jpg?eh={{contact.12565}}&es={{contact.12566}}"
-                         width="520" alt="Recommended for you"
-                         class="full"
-                         style="display:block;width:520px;max-width:92%;height:auto;border:0;">
-                  </a>
+                <td class="pad-hrz" style="padding:16px 40px 0;">
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="text-align:center;">
+                    <tr>
+                      <!-- Col 1 -->
+                      <td class="stack" width="33.333%" valign="top" style="padding:0 8px;">
+                        <a href="#" target="_blank" style="text-decoration:none;">
+                          <img src="https://recommender.scarabresearch.com/merchants/17ADCDA308096B9B/6qdixz/1.jpg?eh={{contact.12565}}&es={{contact.12566}}"
+                               width="172" alt="Recommended Item 1" style="display:block;width:172px;height:auto;border:0;margin:0 auto;">
+                        </a>
+                        <!-- Optional editable captions — remove if not needed -->
+                        <div style="font:14px/1.4 Lato,Arial,Helvetica,sans-serif;color:#000;margin-top:10px;">&nbsp;</div>
+                        <div style="font:14px/1.2 Lato,Arial,Helvetica,sans-serif;color:#d60e00;margin:6px 0 18px;">&nbsp;</div>
+                      </td>
+
+                      <!-- Col 2 -->
+                      <td class="stack" width="33.333%" valign="top" style="padding:0 8px;">
+                        <a href="#" target="_blank" style="text-decoration:none;">
+                          <img src="https://recommender.scarabresearch.com/merchants/17ADCDA308096B9B/6qdixz/2.jpg?eh={{contact.12565}}&es={{contact.12566}}"
+                               width="172" alt="Recommended Item 2" style="display:block;width:172px;height:auto;border:0;margin:0 auto;">
+                        </a>
+                        <div style="font:14px/1.4 Lato,Arial,Helvetica,sans-serif;color:#000;margin-top:10px;">&nbsp;</div>
+                        <div style="font:14px/1.2 Lato,Arial,Helvetica,sans-serif;color:#d60e00;margin:6px 0 18px;">&nbsp;</div>
+                      </td>
+
+                      <!-- Col 3 -->
+                      <td class="stack" width="33.333%" valign="top" style="padding:0 8px;">
+                        <a href="#" target="_blank" style="text-decoration:none;">
+                          <img src="https://recommender.scarabresearch.com/merchants/17ADCDA308096B9B/6qdixz/3.jpg?eh={{contact.12565}}&es={{contact.12566}}"
+                               width="172" alt="Recommended Item 3" style="display:block;width:172px;height:auto;border:0;margin:0 auto;">
+                        </a>
+                        <div style="font:14px/1.4 Lato,Arial,Helvetica,sans-serif;color:#000;margin-top:10px;">&nbsp;</div>
+                        <div style="font:14px/1.2 Lato,Arial,Helvetica,sans-serif;color:#d60e00;margin:6px 0 18px;">&nbsp;</div>
+                      </td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
 
               <!-- Spacer -->
-              <tr><td style="height:24px;line-height:24px;font-size:0;">&nbsp;</td></tr>
+              <tr><td style="height:26px;line-height:26px;font-size:0;">&nbsp;</td></tr>
 
-              <!-- Shop by Category (button block) -->
+              <!-- Shop by Category (buttons) -->
               <tr>
                 <td class="pad-hrz" style="padding:0 40px;">
                   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -163,7 +216,6 @@
                       </td>
                     </tr>
                     <tr><td style="height:14px;line-height:14px;font-size:0;">&nbsp;</td></tr>
-                    <!-- Row 1 -->
                     <tr>
                       <td>
                         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -223,7 +275,7 @@
               <!-- Spacer -->
               <tr><td style="height:24px;line-height:24px;font-size:0;">&nbsp;</td></tr>
 
-              <!-- After CTA image set (4 tiles you provided) -->
+              <!-- Four info tiles -->
               <tr>
                 <td align="center">
                   <a href="#" target="_blank">
@@ -267,7 +319,7 @@
               <!-- Spacer -->
               <tr><td style="height:24px;line-height:24px;font-size:0;">&nbsp;</td></tr>
 
-              <!-- Free shipping + 30 days -->
+              <!-- Shipping / Returns strip -->
               <tr>
                 <td class="pad-hrz" style="padding:0 10px 0;">
                   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
